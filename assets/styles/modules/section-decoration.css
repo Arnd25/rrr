@@ -1,0 +1,138 @@
+.section-decoration {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-block: 24px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.section-decoration--light {
+    z-index: 10;
+    color: var(--secondary);
+    background-color: var(--secondary-foreground);
+}
+
+.section-decoration--dark {
+    z-index: 5;
+    color: var(--secondary-foreground);
+    background-color: var(--secondary);
+}
+
+.section-decoration__text {
+    font-family: var(--secondary);
+    color: currentColor;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: currentColor;
+    font-family: var(--ff-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    min-height: 720px;
+    height: 100%;
+    padding-block-start: 110px;
+    padding-block-end: 24px;
+    color: var(--primary-foreground);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768.98px) {
+    intro {
+        min-height: 550px;
+        background-position: center center;
+    }
+
+}
+
+
+.intro__container {
+    width: 100%;
+    margin-block-start: auto;
+}
+
+.intro__content {
+    max-width: 610px;
+    width: 100%;
+}
+
+.intro__title {
+    color: var(--primary-foreground);
+}
+
+.intro__title-span {
+    color: var(--primary);
+}
+
+.intro__descr {
+    color: var(--gray);
+}
+
+.intro__actions {
+    margin-block-start: 24px;
+    display: flex;
+    column-gap: 16px;
+}

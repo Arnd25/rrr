@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="assets/styles/vendors/normalize.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+<header class="header" id="header-top">
+    <div class="header__container container">
+        <div class="header__logo logo">
+            <a href="./index.html" class="logo__link">
+                <img src="./assets/images/logo/logo.svg" alt="Логотип " class="logo__brand">
+            </a>
+        </div>
+        <!-- navbar -->
+        <nav class="header__navbar navigation" data-menu>
+            <menu class="navigation__menu">
+                <li class="navigation__menu-item">
+                    <a href="./about.html" class="navigation__menu-link navigation__menu-link--active">Info</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="./product.html" class="navigation__menu-link">Buy now</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="./personal.html" class="navigation__menu-link">Personal</a>
+                </li>
+                <li class="navigation__menu-item">
+                    <a href="./contact.html" class="navigation__menu-link">Contact</a>
+                </li>
+            </menu>
+                <button class="header__modal-bt button button--primary">Sign in</button>
+                <button class="header__modal-bt button button--primary">Sign Up</button>
+        </nav>
+        <button class="header__menu-burger" data-menu-toggler>
+            <i class="ri-menu-line"></i>
+            <button class="header__modal-btn button button--primary button__main-login">Sign in</button>
+            <button class="header__modal-btn button button--primary button__main-register">Sing Up</button>
+        </button>
+    </div>
+</header>
+<script type="module" src="assets/scripts/app.js"></script>
+</body>
+</html>
+

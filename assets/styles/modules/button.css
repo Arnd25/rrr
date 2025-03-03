@@ -1,0 +1,41 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 24px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--rounded-base);
+}
+
+.button__main-register {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.button__main-login {
+    transform: translateX(190%);
+
+}
+
+.button--primary {
+    color: var(--primary-foreground);
+    background-color: var(--primary);
+}
+
+.button--outline {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.button--ghost {
+    color: var(--ghost-foreground);
+    border: 1px solid var(--border);
+    background-color: var(--ghost);
+}

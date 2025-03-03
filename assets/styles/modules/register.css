@@ -1,0 +1,126 @@
+.register:is(.register--section) {
+    padding-block: 24px;
+    color: var(--secondary-foreground);
+    background-color: var(--secondary);
+}
+
+.register:is(.register--section) .register__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.register:is(.register--section) .register__col:is(.register__col--left) {
+    width: 100%;
+    height: 100%;
+}
+
+.register:is(.register) .register__picture {
+    width: 100%;
+    height: 790px;
+    object-fit: cover;
+}
+
+.register:is(.register--section) .register__col:is(.register__col--right) {
+    width: 100%;
+    height: 100%;
+}
+
+.register:is(.register--section) .register__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.register:is(.register--section) .register__header {
+    display: grid;
+    row-gap: 16px;
+}
+
+.register:is(.register--section) .register__header-tag {
+    text-align: center;
+}
+
+.register:is(.register--section) .register__header-title {
+    text-align: center;
+    color: currentColor;
+}
+
+.register:is(.register--section) .register__header-text {
+    text-align: center;
+}
+
+.register:is(.register--section) .register__body {
+    display: grid;
+    row-gap: 50px;
+
+}
+
+.register:is(.register--section) .register__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.register:is(.register--section) .register__benefits-item {
+    display: inline-flex;
+}
+
+
+.register:is(.register--section) .register__button {
+    justify-self: center;
+}
+.register__subscribe-form {
+    display: flex;
+    column-gap: 8px;
+}
+
+.register__subscribe-form-item {
+    row-gap: 16px !important;
+    margin-bottom: -35px;
+}
+
+.register__subscribe-form-input {
+    border: none;
+    max-height: 100%;
+    padding: 16px;
+
+}
+
+.register__body button {
+    transform: translateX(110%);
+    height: 48px;
+    width: 160px;
+
+}
+
+.register__subscribe-form-input::placeholder {
+    color: #575757;
+}
+
+.register__subscribe-form-input:is(:focus-visible) {
+    -moz-outline-color: var(--accent);
+    outline-color: var(--accent);
+    outline-offset: 2px;
+}
+
+.register__subscribe-form-input-long {
+    max-width: 100%;
+    width: 520px !important;
+
+}
+
+.register__subscribe-form-input-message {
+    max-width: 100%;
+    width: 520px !important;
+    height: 115px;
+}
+
+
+
+

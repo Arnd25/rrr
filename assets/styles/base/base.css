@@ -1,0 +1,45 @@
+::selection {
+    color: #000;
+    background-color: rgba(255, 108, 46, 0.85);
+}
+
+html {
+    width: 100%;
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+html.is-lock {
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    line-height: 24px;
+    color: var(--foreground);
+    font-family: var(--ff-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1140.98px) {
+    body {
+     font-size: 14px;
+     line-height: 1.25;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
