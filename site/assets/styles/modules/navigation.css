@@ -1,0 +1,27 @@
+.navigation {
+    display: flex;
+
+    border-radius: var(--rounded-base);
+    color: #1B1D21;
+    padding-inline: 16px;
+
+}
+
+.navigation__menu {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    font-weight: 500;
+    font-family: var(--ff-primary);
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+.navigation__menu-link {
+    text-decoration: none;
+    font-weight: 600;
+}
+.header__navbar {
+
+}

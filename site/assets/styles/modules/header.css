@@ -1,0 +1,36 @@
+.header {
+    position: absolute;
+    padding: 20px 50px;
+    width: 100%;
+    color: #1B1D21;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.header__modal-btn {
+    font-family: var(--ff-primary);
+    font-size: 14px;
+    width: 181px;
+    color: var(--background);
+    background-color: black;
+    padding: 13px;
+    border-radius: var(--rounded-base);
+}
+.into__actions-menu {
+    display: flex;
+    gap: 50px;
+    background-color: var(--background);
+    border-radius: var(--rounded-base);
+    max-height: 100%;
+    margin-top: auto;
+}

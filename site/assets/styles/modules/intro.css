@@ -1,0 +1,16 @@
+.intro {
+    background-color: var(--intro);
+    padding-inline: 150px ;
+    padding-top: 155px;
+}
+.intro-text {
+    margin-top: 155px;
+    width: 594px;
+
+}
+.intro__title {
+    color: var(--primary-foreground);
+}
+.intro__description {
+    margin-block: 28px 72px;
+}

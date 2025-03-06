@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --ff-primary: "Inter", serif;
+    --ff-secondary: "Manrope", serif;
+
+    --intro: #FFDCDD;
+    --background: #fff;
+    --foreground: #575757;
+    /* primary */
+    --primary: #7A63F5;
+    --primary-foreground: #0F173D;
+    /* secondary */
+    --secondary: #1f1f1f;
+    --secondary-foreground: var(--gray);
+    /* muted */
+    --muted: #343434;
+    --muted-foreground: var(--gray);
+    /* ghost */
+    --ghost: rgba(31, 31, 31, .04);
+    --ghost-foreground: var(--secondary);
+    /* accent */
+    --accent: var(--primary);
+    --accent-foreground: var(--primary);
+
+    --gray: #676C86;
+    --gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+
+    /* rounded */
+    --rounded-base: 8px;
+    --rounded-full: 50%;
+
+    /* stoke */
+    --separator: #E0E0E0;
+    --border: #E0E0E0;
+
+    /* container */
+    --content: 1440px;
+    --container-offset: 20px;
+    --container-width: calc(var(--content) + (var(--container-offset) * 2));
+
+}

@@ -1,0 +1,8 @@
+.button--primary {
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 14px;
+    border-radius: var(--rounded-base);
+    border: none;
+    text-align: center;
+}
