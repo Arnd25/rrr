@@ -5,7 +5,6 @@
     left: 0;
     padding-block: 24px;
     z-index: 90;
-    background: var(--background);
 }
 
 .header__container {
@@ -28,28 +27,18 @@
     border-radius: var(--rounded-base);
     z-index: 90;
 }
-.header__modal-bt {
-    display: none;
-}
 
 @media screen and (max-width: 1440.98px) {
+
+}
+
+@media screen and (max-width: 1140.98px) {
     .header__menu-burger {
         display: block;
     }
     .header__modal-btn {
         display: none;
     }
-    .header__modal-bt {
-        font-size: 14px;
-        width: 100px;
-        display: block;
-        margin-top: 20px;
-    }
-}
-
-
-@media screen and (max-width: 1140.98px) {
-
 }
 
 @media screen and (max-width: 768.98px) {
@@ -59,20 +48,3 @@
 @media screen and (max-width: 520.98px) {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

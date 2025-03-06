@@ -1,0 +1,71 @@
+.pricing:is(.pricing--section) {
+    padding-block: 104px;
+    color: var(--primary-foreground);
+    background-color: var(--secondary);
+}
+
+.pricing:is(.pricing--section) .pricing__container {
+    display: grid;
+    row-gap: 80px;
+}
+
+.pricing:is(.pricing--section) .pricing__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1140.98px) {
+    .pricing:is(.pricing--section) .pricing__header {
+        row-gap: 24px;
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
+
+
+.pricing:is(.pricing--section) .pricing__header-text {
+    max-width: 505px;
+    display: grid;
+    row-gap: 16px;
+}
+
+@media screen and (max-width: 768.98px) {
+    .pricing:is(.pricing--section) .pricing__header-text {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .pricing:is(.pricing--section) .pricing__visitors {
+        width: 100%;
+    }
+}
+
+.pricing:is(.pricing--section) .pricing__header-title {
+    color: currentColor;
+}
+
+.pricing:is(.pricing--section) .pricing__grid {
+    --col: 3;
+    --gap-x: 95px;
+    --gap-y: 40px;
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    place-self: stretch;
+    column-gap: var(--gap-x);
+    row-gap: var(--gap-y);
+}
+
+@media screen and (max-width: 1140.98px) {
+    .pricing:is(.pricing--section) .pricing__grid {
+        --col: 2;
+        gap: var(--gap-y);
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .pricing:is(.pricing--section) .pricing__grid {
+        --col: 1;
+        gap: 24px;
+    }
+}

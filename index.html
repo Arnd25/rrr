@@ -5,50 +5,881 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>web</title>
-
+    <title>StriveCore</title>
+    <!-- icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/styles/vendors/swiper.min.css">
     <link rel="stylesheet" href="assets/styles/vendors/normalize.css">
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
-
 <body>
-
-<header class="header" id="header-top">
-    <div class="header__container container">
-        <div class="header__logo logo">
-            <a href="./index.html" class="logo__link">
-                <img src="./assets/images/logo/logo.svg" alt="Логотип " class="logo__brand">
-            </a>
+    <header class="header" id="header-top">
+        <div class="header__container container">
+            <div class="header__logo logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./assets/images/logo.svg" alt="Логотип StriveCore" class="logo__brand">
+                </a>
+            </div>
+            <!-- navbar -->
+            <nav id="navbar" class="header__navbar navigation" data-menu>
+                <menu class="navigation__menu">
+                    <li class="navigation__menu-item">
+                        <a href="./about.html" class="navigation__menu-link navigation__menu-link--active">About Us</a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a href="./membership.html" class="navigation__menu-link">Membership</a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a href="./class.html" class="navigation__menu-link">Class</a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a href="./trainer.html" class="navigation__menu-link">Trainer</a>
+                    </li>
+                    <li class="navigation__menu-item">
+                        <a href="./contact.html" class="navigation__menu-link">Contact</a>
+                    </li>
+                </menu>
+                <button class="navigation__modal-btn button button--primary">Join Class Now</button>
+            </nav>
+            <button class="header__menu-burger" data-menu-toggler>
+                <i class="ri-menu-line"></i>
+            </button>
+            <button class="header__modal-btn button button--primary">Join Class Now</button>
         </div>
-        <!-- navbar -->
-        <nav class="header__navbar navigation" data-menu>
-            <menu class="navigation__menu">
-                <li class="navigation__menu-item">
-                    <a href="./about.html" class="navigation__menu-link navigation__menu-link--active">Info</a>
-                </li>
-                <li class="navigation__menu-item">
-                    <a href="./product.html" class="navigation__menu-link">Buy now</a>
-                </li>
-                <li class="navigation__menu-item">
-                    <a href="./personal.html" class="navigation__menu-link">Personal</a>
-                </li>
-                <li class="navigation__menu-item">
-                    <a href="./contact.html" class="navigation__menu-link">Contact</a>
-                </li>
-            </menu>
-                <button class="header__modal-bt button button--primary">Sign in</button>
-                <button class="header__modal-bt button button--primary">Sign Up</button>
-        </nav>
-        <button class="header__menu-burger" data-menu-toggler>
-            <i class="ri-menu-line"></i>
-            <button class="header__modal-btn button button--primary button__main-login">Sign in</button>
-            <button class="header__modal-btn button button--primary button__main-register">Sing Up</button>
-        </button>
-    </div>
-</header>
-<script type="module" src="assets/scripts/app.js"></script>
+    </header>
+    <main class="main" id="main">
+        <!-- intro section -->
+        <section class="intro intro--section" id="intro-section" style="background-image: url('./assets/images/intro/intro-bg.jpg')">
+            <div class="intro__container container">
+                <div class="intro__content">
+                    <h1 class="intro__title title-2xl">Achieve Your Peak Performance with <span class="intro__title-span">StriveCore</span></h1>
+                    <p class="intro__descr">Your journey to strength, health, and vitality starts here.</p>
+                    <ul class="intro__actions">
+                        <li class="intro__actions-item">
+                            <a href="#!" class="intro__actions-button button button--outline">Explore Classes</a>
+                        </li>
+                        <li class="intro__actions-item">
+                            <a href="#!" class="intro__actions-button button button--primary">Join Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- benefits section -->
+        <section class="benefits benefits--section" id="benefits-section">
+            <div class="benefits__container container spacing spacing--y">
+                <div class="benefits__header">
+                    <div class="benefits__header-tag tag">Why Choose StriveCore?</div>
+                    <h2 class="benefits__header-title title-xl">StriveCore is more than just a gym – it's a community dedicated to your fitness journey</h2>
+                </div>
+                <div class="benefits__body spacing spacing--y">
+                    <ul class="benefits__grid">
+                        <li class="benefits__grid-item">
+                            <article class="benefits__grid-card benefit-card">
+                                <div class="benefit-card__wrapper">
+                                    <div class="benefit-card__header">
+                                        <div class="benefit-card__header-count">01</div>
+                                        <h3 class="benefit-card__header-name title-lg">Modern Equipment</h3>
+                                    </div>
+                                    <div class="benefit-card__body">
+                                        <img loading="lazy" src="./assets/images/benefits/img-1.jpg" alt="Фитнес зал" class="benefit-card__body-img">
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="benefits__grid-item">
+                            <article class="benefits__grid-card benefit-card">
+                                <div class="benefit-card__wrapper">
+                                    <div class="benefit-card__header">
+                                        <div class="benefit-card__header-count">01</div>
+                                        <h3 class="benefit-card__header-name title-lg">Modern Equipment</h3>
+                                    </div>
+                                    <div class="benefit-card__body">
+                                        <img loading="lazy" src="./assets/images/benefits/img-1.jpg" alt="Фитнес зал" class="benefit-card__body-img">
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="benefits__grid-item">
+                            <article class="benefits__grid-card benefit-card">
+                                <div class="benefit-card__wrapper">
+                                    <div class="benefit-card__header">
+                                        <div class="benefit-card__header-count">01</div>
+                                        <h3 class="benefit-card__header-name title-lg">Modern Equipment</h3>
+                                    </div>
+                                    <div class="benefit-card__body">
+                                        <img loading="lazy" src="./assets/images/benefits/img-1.jpg" alt="Фитнес зал" class="benefit-card__body-img">
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="benefits__description">
+                        <p>Our state-of-the-art facilities, certified trainers, and personalized programs ensure you achieve your goals faster and sustainably.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing section -->
+        <section class="pricing pricing--section" id="pricing-section">
+            <div class="pricing__container container spacing spacing--y">
+                <div class="pricing__header">
+                    <div class="pricing__header-text">
+                        <div class="pricing__header-tag tag">Pricing Plan</div>
+                        <h2 class="pricing__header-title title-xl">Find the Perfect Plan for Your Lifestyle</h2>
+                        <div class="pricing__header-description">
+                            <p>Choose from our tailored membership options</p>
+                        </div>
+                    </div>
+                    <div class="pricing__visitors visitors">
+                        <div class="visitors__wrapper">
+                            <div class="visitors__text">
+                                <div class="visitors__tag tag">Happy User</div>
+                                <h2 class="visitors__title title-xl">16k</h2>
+                                <div class="visitors__description">
+                                    <p>Real Happy Members</p>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/visitors/img-1.png" alt="Default" class="visitors__img">
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing__body">
+                    <ul class="pricing__grid">
+                        <li class="pricing__grid-item">
+                            <article class="pricing__grid-card pricing-card">
+                                <div class="pricing-card__body">
+                                    <div class="pricing-card__info">
+                                        <div class="pricing-card__info-text">
+                                            <h3 class="pricing-card__info-title title-md">Basic Plan</h3>
+                                            <div class="pricing-card__info-description">
+                                                <p>Essential access for beginners to stay active and fit</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-card__info-value title-xl">$25,99<span>/Month</span></div>
+                                    </div>
+                                    <div class="pricing-card__advantages">
+                                        <ul class="pricing-card__advantages-list">
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-card__action">
+                                        <a href="#!" class="pricing-card__action-link button button--primary">Sign Up Today</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="pricing__grid-item">
+                            <article class="pricing__grid-card pricing-card">
+                                <div class="pricing-card__body">
+                                    <div class="pricing-card__info">
+                                        <div class="pricing-card__info-text">
+                                            <h3 class="pricing-card__info-title title-md">Basic Plan</h3>
+                                            <div class="pricing-card__info-description">
+                                                <p>Essential access for beginners to stay active and fit</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-card__info-value title-xl">$25,99<span>/Month</span></div>
+                                    </div>
+                                    <div class="pricing-card__advantages">
+                                        <ul class="pricing-card__advantages-list">
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-card__action">
+                                        <a href="#!" class="pricing-card__action-link button button--primary">Sign Up Today</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="pricing__grid-item">
+                            <article class="pricing__grid-card pricing-card">
+                                <div class="pricing-card__body">
+                                    <div class="pricing-card__info">
+                                        <div class="pricing-card__info-text">
+                                            <h3 class="pricing-card__info-title title-md">Basic Plan</h3>
+                                            <div class="pricing-card__info-description">
+                                                <p>Essential access for beginners to stay active and fit</p>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-card__info-value title-xl">$25,99<span>/Month</span></div>
+                                    </div>
+                                    <div class="pricing-card__advantages">
+                                        <ul class="pricing-card__advantages-list">
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Gym Access
+                                                </span>
+                                            </li>
+                                            <li class="pricing-card__advantages-item">
+                                                <span class="pricing-card__advantages-badge badge">
+                                                    <i class="ri-check-line"></i>Locker Included
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-card__action">
+                                        <a href="#!" class="pricing-card__action-link button button--primary">Sign Up Today</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- plan section -->
+        <section class="plan plan--section" id="plan-section">
+            <div class="plan__container container">
+                <div class="plan__header">
+                    <div class="plan__header-tag tag">Personalized Plan</div>
+                    <h2 class="plan__header-title title-xl">Fuel Your Body<br>the Right Way</h2>
+                </div>
+                <div class="plan__body">
+                    <ul class="plan__grid">
+                        <li class="plan__grid-item">
+                            <article class="plan__grid-card plan-card">
+                                <div class="plan-card__body">
+                                    <div class="plan-card__body-alt">
+                                        <h3 class="plan-card__body-title title-lg">Weight Loss Meal Plan</h3>
+                                        <div class="plan-card__body-text">
+                                            <p>Low-calorie meals to burn fat and achieve your ideal weight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.png" alt="Default" class="plan-card__img">
+                            </article>
+                        </li>
+                        <li class="plan__grid-item">
+                            <article class="plan__grid-card plan-card">
+                                <div class="plan-card__body">
+                                    <div class="plan-card__body-alt">
+                                        <h3 class="plan-card__body-title title-lg">Weight Loss Meal Plan</h3>
+                                        <div class="plan-card__body-text">
+                                            <p>Low-calorie meals to burn fat and achieve your ideal weight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.png" alt="Default" class="plan-card__img">
+                            </article>
+                        </li>
+                        <li class="plan__grid-item">
+                            <article class="plan__grid-card plan-card">
+                                <div class="plan-card__body">
+                                    <div class="plan-card__body-alt">
+                                        <h3 class="plan-card__body-title title-lg">Weight Loss Meal Plan</h3>
+                                        <div class="plan-card__body-text">
+                                            <p>Low-calorie meals to burn fat and achieve your ideal weight.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.png" alt="Default" class="plan-card__img">
+                            </article>
+                        </li>
+                    </ul>
+                    <div class="plan__detail">
+                        <div class="plan__detail-text">
+                            <p>Our expert-designed nutrition plans complement your workout for maximum results.</p>
+                        </div>
+                        <a href="#!" class="plan__detail-link button button--ghost">Get Your Personalized Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- classes section -->
+        <section class="move move--section" id="move-section">
+            <div class="move__container container">
+                <div class="move__header move__description">
+                    <h2 class="move-text-title move">Our Classes</h2>
+                    <p class="move-card__body-title title-lg">Dynamic Classes to Keep You Moving</p>
+                </div>
+                <div class="move__body">
+                    <ul class="move__grid">
+                        <li class="move__grid-item move-card__header-name">
+                            <article class="move__grid-card move-card text-box">
+                                <div class="move-card__body">
+                                    <div class="move-card__body-alt">
+                                        <h3 class="move-card__body-title title-lg ">Power Yoga</h3>
+                                        <div class="move-card__body-text move__contacts-link">
+                                            <p><i class="ri-calendar-view"></i>Monday & Wednesday at 7 PM.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.jpeg" alt="default" class="move-card__img">
+                            </article></li>
+                        <li class="move__grid-item move-card__header-name">
+                            <article class="move__grid-card move-card">
+                                <div class="move-card__body">
+                                    <div class="move-card__body-alt">
+                                        <h3 class="move-card__body-title title-lg">Strength Circuit</h3>
+                                        <div class="move-card__body-text move__contacts-link">
+                                            <p><i class="ri-calendar-view"></i>Tuesday & Thursday at 6 PM.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.jpeg" alt="default" class="move-card__img">
+                            </article></li>
+                        <li class="move__grid-item move-card__header-name">
+                            <article class="move__grid-card move-card">
+                                <div class="move-card__body">
+                                    <div class="move-card__body-alt">
+                                        <h3 class="move-card__body-title title-lg">Cardio Blast</h3>
+                                        <div class="move-card__body-text move__contacts-link">
+                                            <p><i class="ri-calendar-view"></i>Weekends at 9 AM.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img loading="lazy" src="./assets/images/visitors/img-1.jpeg" alt="default" class="move-card__img">
+                            </article></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="move__description move__description-text">Stay motivated with our variety of group fitness classes, from high-energy HIIT to calming yoga sessions.</p>
+            </div>
+            <div class="class__button move__button">
+                <a href="#!" class="move564__detail-link button button--ghost m">View Full Schedule</a>
+            </div>
+        </section>
+        <!-- events section -->
+        <section class="events events--section" id="events-section">
+            <div class="section-decoration section-decoration--light">
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+                <span class="section-decoration__text">#BodyBuilding</span>
+            </div>
+            <div class="section-decoration section-decoration--dark">
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+                <span class="section-decoration__text">#Sportswear</span>
+            </div>
+            <div class="events__container container spacing spacing--y">
+                <div class="events__header">
+                    <div class="events__header-tag tag">Community Events</div>
+                    <h2 class="events__header-title title-xl">Join Our Fitness Community Events</h2>
+                    <div class="events__header-description">
+                        <p>Stay engaged with monthly challenges and workshops</p>
+                    </div>
+                </div>
+                <div class="events__body">
+                    <ul class="events__list">
+                        <li class="events__list-item">
+                            <article class="events__list-card event-card">
+                                <div class="event-card__body">
+                                    <div class="event-card__info">
+                                        <img loading="lazy" src="./assets/images/events/img-1.webp" width="240" height="160" alt="Спортивная девушка" class="event-card__info-img">
+                                        <div class="event-card__info-alt">
+                                            <a href="#!" class="event-card__info-link">
+                                                <h3 class="event-card__info-name title-lg">30-Day Transformation Challenge</h3>
+                                            </a>
+                                            <span class="event-card__info-date">
+                                                    <i class="ri-calendar-line"></i>
+                                                    Starts Dec 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="event-card__button button button--primary">Register Now</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events__list-item">
+                            <article class="events__list-card event-card">
+                                <div class="event-card__body">
+                                    <div class="event-card__info">
+                                        <img loading="lazy" src="./assets/images/events/img-1.webp" width="240" height="160" alt="Спортивная девушка" class="event-card__info-img">
+                                        <div class="event-card__info-alt">
+                                            <a href="#!" class="event-card__info-link">
+                                                <h3 class="event-card__info-name title-lg">30-Day Transformation Challenge</h3>
+                                            </a>
+                                            <span class="event-card__info-date">
+                                                    <i class="ri-calendar-line"></i>
+                                                    Starts Dec 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="event-card__button button button--primary">Register Now</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="events__list-item">
+                            <article class="events__list-card event-card">
+                                <div class="event-card__body">
+                                    <div class="event-card__info">
+                                        <img loading="lazy" src="./assets/images/events/img-1.webp" width="240" height="160" alt="Спортивная девушка" class="event-card__info-img">
+                                        <div class="event-card__info-alt">
+                                            <a href="#!" class="event-card__info-link">
+                                                <h3 class="event-card__info-name title-lg">30-Day Transformation Challenge</h3>
+                                            </a>
+                                            <span class="event-card__info-date">
+                                                    <i class="ri-calendar-line"></i>
+                                                    Starts Dec 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button class="event-card__button button button--primary">Register Now</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--   community section     -->
+        <section class="community community--section" id="community-section">
+            <div class="community__container container">
+                <div class="community__col community__col--left">
+                    <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Спортсмен" class="community__picture">
+                </div>
+                <div class="community__col community__col--right">
+                    <div class="community__wrapper">
+                        <div class="community__header">
+                            <div class="community__header-tag tag">Our Community</div>
+                            <h2 class="community__header-title title-xl">Join the StriveCore Community Today!</h2>
+                            <div class="community__header-text">
+                                <p>No matter your fitness level, we’re here to help you become stronger, healthier, and more confident.</p>
+                            </div>
+                        </div>
+                        <div class="community__body">
+                            <ul class="community__benefits">
+                                <li class="community__benefits-item">
+                                    <span class="community__benefits-badge badge">
+                                        <i class="ri-check-line"></i>
+                                        Free Trial Classes
+                                    </span>
+                                </li>
+                                <li class="community__benefits-item">
+                                    <span class="community__benefits-badge badge">
+                                        <i class="ri-check-line"></i>
+                                        Free Trial Classes
+                                    </span>
+                                </li>
+                                <li class="community__benefits-item">
+                                    <span class="community__benefits-badge badge">
+                                        <i class="ri-check-line"></i>
+                                        Free Trial Classes
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="community__visitors visitors">
+                                <div class="visitors__wrapper">
+                                    <div class="visitors__text">
+                                        <div class="visitors__tag tag">Happy User</div>
+                                        <h2 class="visitors__title title-xl">16k</h2>
+                                        <div class="visitors__description">
+                                            <p>Real Happy Members</p>
+                                        </div>
+                                    </div>
+                                    <img loading="lazy" src="./assets/images/visitors/img-1.png" alt="Default" class="visitors__img">
+                                </div>
+                            </div>
+                            <a href="#!" class="community__button button button--primary">Sign Up Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- trainers section -->
+        <section class="trainers trainers--section" id="trainers-section">
+            <div class="trainers__container container">
+                <ul class="trainers__grid">
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-info">
+                                    <h3 class="trainer-card__body-name">Alex Carter</h3>
+                                    <div class="trainer-card__body-position">
+                                        <p>Strength & Conditioning Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Тренер" class="trainer-card__picture">
+                        </article>
+                    </li>
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card trainer-card--main">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-alt">
+                                    <div class="trainer-card__body-tag tag">Our Trainer</div>
+                                    <h2 class="trainer-card__body-title title-xl">Meet Your Expert Trainers</h2>
+                                    <div class="trainer-card__body-text">
+                                        <p>Our certified trainers are here to guide, inspire, and challenge you every step of the way.</p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="trainer-card__link button button--ghost">Learn More About Our Trainers</a>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-info">
+                                    <h3 class="trainer-card__body-name">Alex Carter</h3>
+                                    <div class="trainer-card__body-position">
+                                        <p>Strength & Conditioning Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Тренер" class="trainer-card__picture">
+                        </article>
+                    </li>
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-info">
+                                    <h3 class="trainer-card__body-name">Alex Carter</h3>
+                                    <div class="trainer-card__body-position">
+                                        <p>Strength & Conditioning Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Тренер" class="trainer-card__picture">
+                        </article>
+                    </li>
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-info">
+                                    <h3 class="trainer-card__body-name">Alex Carter</h3>
+                                    <div class="trainer-card__body-position">
+                                        <p>Strength & Conditioning Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Тренер" class="trainer-card__picture">
+                        </article>
+                    </li>
+                    <li class="trainers__grid-item">
+                        <article class="trainers__grid-card trainer-card">
+                            <div class="trainer-card__body">
+                                <div class="trainer-card__body-info">
+                                    <h3 class="trainer-card__body-name">Alex Carter</h3>
+                                    <div class="trainer-card__body-position">
+                                        <p>Strength & Conditioning Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img loading="lazy" src="./assets/images/intro/intro-bg.jpg" alt="Тренер" class="trainer-card__picture">
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Testimonials section -->
+        <section class="testimonials testimonials--section" id="testimonials-section">
+            <div class="testimonials__container container">
+                <div class="testimonials__header">
+                    <div align="center" class="testimonials__header-tag tag">Testimonials</div>
+                    <h2 align="center" class="testimonials__header-title title-xl">Real Stories, Real Results</h2>
+                    <div align="center" class="testimonials__header-text">
+                        <p>Hear from our happy members</p>
+                    </div>
+                </div>
+                <div class="testimonials__body">
+                    <div class="testimonials__body-slider testimonials-slider swiper">
+                        <div class="testimonials-slider__wrapper swiper-wrapper">
+                            <div class="testimonials-slider__slide testimonial-slide swiper-slide">
+                                <div class="testimonial-slide__body">
+                                    <img loading="lazy" src="" alt="" width="80" height="80" class="testimonial-slide__body-picture">
+                                    <h3 align="center" class="testimonial-slide__body-title title-lg">"StriveCore helped me transform my life!"</h3>
+                                    <div align="center" class="testimonial-slide__body-text">
+                                        <p>"StriveCore has completely transformed my fitness journey. The trainers are incredibly knowledgeable, and the state-of-the-art equipment makes every workout exciting and challenging. I’ve never felt more motivated to push myself and achieve my goals. StriveCore isn’t just a gym, it’s a community that truly cares about your success!"</p>
+                                    </div>
+                                    <h4 align="center" class="testimonial-slide__body-author title-md">Sarah J.</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-slider__slide testimonial-slide swiper-slide">
+                                <div class="testimonial-slide__body">
+                                    <img loading="lazy" src="" alt="" width="80" height="80" class="testimonial-slide__body-picture">
+                                    <h3 align="center" class="testimonial-slide__body-title title-lg">"StriveCore helped me transform my life!"</h3>
+                                    <div align="center" class="testimonial-slide__body-text">
+                                        <p>"StriveCore has completely transformed my fitness journey. The trainers are incredibly knowledgeable, and the state-of-the-art equipment makes every workout exciting and challenging. I’ve never felt more motivated to push myself and achieve my goals. StriveCore isn’t just a gym, it’s a community that truly cares about your success!"</p>
+                                    </div>
+                                    <h4 align="center" class="testimonial-slide__body-author title-md">Sarah J.</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-slider__slide testimonial-slide swiper-slide">
+                                <div class="testimonial-slide__body">
+                                    <img loading="lazy" src="" alt="" width="80" height="80" class="testimonial-slide__body-picture">
+                                    <h3 align="center" class="testimonial-slide__body-title title-lg">"StriveCore helped me transform my life!"</h3>
+                                    <div align="center" class="testimonial-slide__body-text">
+                                        <p>"StriveCore has completely transformed my fitness journey. The trainers are incredibly knowledgeable, and the state-of-the-art equipment makes every workout exciting and challenging. I’ve never felt more motivated to push myself and achieve my goals. StriveCore isn’t just a gym, it’s a community that truly cares about your success!"</p>
+                                    </div>
+                                    <h4 align="center" class="testimonial-slide__body-author title-md">Sarah J.</h4>
+                                </div>
+                            </div>
+                            <div class="testimonials-slider__slide testimonial-slide swiper-slide">
+                                <div class="testimonial-slide__body">
+                                    <img loading="lazy" src="" alt="" width="80" height="80" class="testimonial-slide__body-picture">
+                                    <h3 align="center" class="testimonial-slide__body-title title-lg">"StriveCore helped me transform my life!"</h3>
+                                    <div align="center" class="testimonial-slide__body-text">
+                                        <p>"StriveCore has completely transformed my fitness journey. The trainers are incredibly knowledgeable, and the state-of-the-art equipment makes every workout exciting and challenging. I’ve never felt more motivated to push myself and achieve my goals. StriveCore isn’t just a gym, it’s a community that truly cares about your success!"</p>
+                                    </div>
+                                    <h4 align="center" class="testimonial-slide__body-author title-md">Sarah J.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-slider__pagination swiper-pagination"></div>
+                        <button class="testimonials-slider__button testimonials-slider__button--prev" data-slider-prev>
+                            <i class="ri-arrow-left-line"></i>
+                        </button>
+                        <button class="testimonials-slider__button testimonials-slider__button--next" data-slider-next>
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- reg -->
+        <section class="register register--section" id="register-section">
+            <div class="register__container container">
+                <div class="register__col register__col--right">
+                    <div class="register__wrapper">
+                        <div class="register__header">
+                            <div class="register__header-tag tag">Get in Touch</div>
+                            <h2 class="register__header-title title-xl">Ready to Take the First Step?</h2>
+                        </div>
+                        <div class="register__body">
+                            <div class="register__subscribe-form">
+                                <div class="register__subscribe-form-item">
+                                    <input type="text" class="register__subscribe-form-input" placeholder="Name" required>
+                                </div>
+                                <div class="register__subscribe-form-item">
+                                    <input type="number" class="register__subscribe-form-input" placeholder="Phone" required>
+                                </div>
+                            </div>
+                            <div class="register__subscribe-form-item">
+                                <input type="email" class="register__subscribe-form-input register__subscribe-form-input-long" placeholder="Email" required>
+                            </div>
+                            <div class="register__subscribe-form-item">
+                                <input type="text" class="register__subscribe-form-input register__subscribe-form-input-message" placeholder="Message" required>
+                            </div>
+                            <button type="submit" class="footer__subscribe-form-button button button--primary">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="register__col register__col--left">
+                    <img loading="lazy" src="./assets/images/register/cat.jpg" alt="Спортсмен" class="register__picture">
+                </div>
+            </div>
+        </section>
+        <!--  future  -->
+        <section class="future future--section" id="future-section">
+            <div class="future__container container spacing spacing--y">
+                <div class="future__header">
+                    <div class="future__header-tag tag">Featured Trainer</div>
+                    <h2 class="future__header-title title-xl">Meet Our Top Trainers Who</h2>
+                    <h3 class="future__header-title-h3 title-xl">Inspire Excellence</h3>
+                </div>
+                <div class="future__body spacing spacing--y">
+                    <ul class="future__grid">
+                        <li class="future__grid-item">
+                            <div class="future-card__wrapper">
+                                <div class="future-card__body">
+                                    <img loading="lazy" src="./assets/images/register/cat.jpg" alt="Фитнес зал" class="future-card__body-img">
+                                </div>
+                                <div class="future-card__header">
+                                    <h3 class="future-card__header-name title-lg">Noel Dante</h3>
+                                    <h4 class="future-card__header-name future-card__header-text title">Strength & Conditioning Expert</h4>
+                                    <p align="center">Noel creates tailored strength programs that<br>challenge limits, build resilience, and deliver<br>remarkable results for clients at every fitness level.</p>
+                                </div>
+                                <div class="future-card__footer title-lg">
+                                    <div class="future-card__body-title">
+                                        <p>AWARDS</p>
+                                    </div>
+                                    <a href="./index.html" class="logo__link logo__link-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-2.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-1.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-3.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="future__grid-item">
+                            <div class="future-card__wrapper">
+                                <div class="future-card__body">
+                                    <img loading="lazy" src="./assets/images/register/cat.jpg" alt="Фитнес зал" class="future-card__body-img">
+                                </div>
+                                <div class="future-card__header">
+                                    <h3 class="future-card__header-name title-lg">Noel Dante</h3>
+                                    <h4 class="future-card__header-name future-card__header-text title">Strength & Conditioning Expert</h4>
+                                    <p align="center">Noel creates tailored strength programs that<br>challenge limits, build resilience, and deliver<br>remarkable results for clients at every fitness level.</p>
+                                </div>
+                                <div class="future-card__footer title-lg">
+                                    <div class="future-card__body-title">
+                                        <p>AWARDS</p>
+                                    </div>
+                                    <a href="./index.html" class="logo__link logo__link-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-2.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-1.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                        <img class="logo__img" src="./assets/images/future/logo-reg-3.svg" alt="Логотип StriveCore" class="logo__brand-future">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__container footer__container--top container">
+            <div class="footer__logo logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./assets/images/logo-dark.svg" alt="Логотип StriveCore" class="logo__brand">
+                </a>
+            </div>
+            <div class="footer__copyright">
+                <div class="footer__copyright-text">
+                    <p>Copyright © 2024 StriveCore by Sabr Creative</p>
+                </div>
+            </div>
+            <div class="footer__socials socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <a href="#!" target="_blank" class="socials__link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" target="_blank" class="socials__link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" target="_blank" class="socials__link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" target="_blank" class="socials__link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__container footer__container--bottom container">
+            <div class="footer__about">
+                <h2 class="footer__about-title title-md">About us</h2>
+                <div class="footer__about-text">
+                    <p>StriveCore is a fitness community committed to your health and lifestyle. With expert trainers and top-tier equipment, we provide the support you need to reach your goals and elevate your fitness journey.</p>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <h2 class="footer__contacts-title title-md">Contact US</h2>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <a href="" class="footer__contacts-link footer__contacts-link--map">
+                            <i class="ri-map-pin-2-fill"></i>
+                            123 Fitness Lane, Wellness City.
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="tel:1234567890" class="footer__contacts-link footer__contacts-link--phone">
+                            <i class="ri-phone-fill"></i>
+                            (123) 456-7890
+                        </a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <a href="mailto:info@strivecore.com" class="footer__contacts-link footer__contacts-link--email">
+                            <i class="ri-mail-fill"></i>
+                            info@strivecore.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__navigation">
+                <h2 class="footer__navigation-title title-md">Quick Links</h2>
+                <ul class="footer__navigation-list">
+                    <li class="footer__navigation-item"><a href="" class="footer__navigation-link">About Us</a></li>
+                    <li class="footer__navigation-item"><a href="" class="footer__navigation-link">Membership</a></li>
+                    <li class="footer__navigation-item"><a href="" class="footer__navigation-link">Class</a></li>
+                    <li class="footer__navigation-item"><a href="" class="footer__navigation-link">Trainer</a></li>
+                </ul>
+            </div>
+            <div class="footer__subscribe">
+                <h2 class="footer__subscribe-title title-md">Join Our Newsletter</h2>
+                <div class="footer__subscribe-wrapper">
+                    <div class="footer__subscribe-text">
+                        <p>Get the latest gym news, fitness tips, & exclusive offers delivered straight to your inbox.</p>
+                    </div>
+                    <form action="#!" method="post" enctype="multipart/form-data" class="footer__subscribe-form">
+                        <div class="footer__subscribe-form-item">
+                            <input type="email" class="footer__subscribe-form-input" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="footer__subscribe-form-button button button--primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="assets/scripts/vendors/swiper.min.js"></script>
+    <script type="module" src="assets/scripts/app.js"></script>
 </body>
 </html>
-

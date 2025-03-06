@@ -13,13 +13,11 @@
 }
 
 @media screen and (max-width: 768.98px) {
-    intro {
+    .intro {
         min-height: 550px;
         background-position: center center;
     }
-
 }
-
 
 .intro__container {
     width: 100%;

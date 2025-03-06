@@ -1,0 +1,14 @@
+.testimonials:is(.testimonials--section) {
+    padding-block: 104px;
+    background-color: var(--gray);
+}
+
+.testimonials:is(.testimonials--section) .testimonials__container {
+    display: grid;
+    row-gap: 40px;
+}
+
+.testimonials:is(.testimonials--section) .testimonials__header {
+    display: grid;
+    row-gap: 16px;
+}

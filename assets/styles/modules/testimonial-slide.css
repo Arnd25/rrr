@@ -1,0 +1,29 @@
+.testimonial-slide {
+    width: 100% !important;
+    padding: 40px;
+    background-color: var(--background);
+    overflow: hidden !important;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .testimonial-slide {
+        padding-inline: 0;
+    }
+}
+
+.testimonial-slide__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+}
+
+.testimonial-slide__body-picture {
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+    background-color: red;
+    border-radius: var(--rounded-full);
+    object-fit: cover;
+}

@@ -1,0 +1,85 @@
+.plan:is(.plan--section) {
+    padding-block: 104px;
+    background-color: var(--background);
+}
+
+.plan:is(.plan--section) .plan__container {
+    display: grid;
+    row-gap: 80px;
+}
+
+.plan:is(.plan--section) .plan__header {
+    display: grid;
+    row-gap: 16px;
+}
+
+.plan:is(.plan--section) .plan__body {
+    position: relative;
+}
+
+.plan:is(.plan--section) .plan__grid {
+    --col: 3;
+    display: grid;
+    grid-template-columns: repeat(var(--col), 1fr);
+    place-self: stretch;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .plan:is(.plan--section) .plan__grid {
+        --col: 2;
+        gap: 24px;
+        grid-auto-rows: 340px;
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .plan:is(.plan--section) .plan__grid {
+        --col: 1;
+    }
+}
+
+.plan:is(.plan--section) .plan__grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+.plan:is(.plan--section) .plan__grid-item:nth-child(2) {
+    position: relative;
+    top: -115px;
+}
+
+.plan:is(.plan--section) .plan__grid-item:nth-child(3) {
+    position: relative;
+    top: -230px;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .plan:is(.plan--section) .plan__grid-item:nth-child(2),
+    .plan:is(.plan--section) .plan__grid-item:nth-child(3) {
+        top: unset;
+    }
+}
+
+.plan__detail {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 360px;
+    display: grid;
+    row-gap: 24px;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .plan__detail {
+        margin-block-start: 24px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768.98px) {
+    .plan__detail {
+        max-width: 100%;
+    }
+}

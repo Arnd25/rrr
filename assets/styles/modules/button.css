@@ -10,20 +10,6 @@
     border-radius: var(--rounded-base);
 }
 
-.button__main-register {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-}
-
-.button__main-login {
-    transform: translateX(190%);
-
-}
-
 .button--primary {
     color: var(--primary-foreground);
     background-color: var(--primary);

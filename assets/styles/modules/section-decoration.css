@@ -7,6 +7,12 @@
     column-gap: 14px;
 }
 
+@media screen and (max-width: 1140.98px) {
+    .section-decoration {
+        display: none;
+    }
+}
+
 .section-decoration--light {
     z-index: 10;
     color: var(--secondary);
@@ -20,119 +26,9 @@
 }
 
 .section-decoration__text {
-    font-family: var(--secondary);
-    color: currentColor;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     color: currentColor;
     font-family: var(--ff-secondary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

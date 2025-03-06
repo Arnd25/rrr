@@ -1,0 +1,58 @@
+.move-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-block-start: 104px;
+    color: var(--primary-foreground);
+    transition: 200ms;
+}
+.move-card:is(:hover, :active) {
+    transform: scale(1.2);
+}
+
+.move-card__body {
+    position: absolute;
+    inset: 0;
+    padding: 0 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.move-card__body-alt {
+    margin-block-start: auto;
+    display: grid;
+    row-gap: 8px;
+    background-color: var(--background);
+    padding: 16px;
+}
+.move-card__body-title {
+    color: var(--secondary);
+    text-align: center;
+
+}
+
+.move-card__body-text {
+    color: var(--foreground);
+    text-align: center;
+
+}
+
+.move-card__img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.move__detail {
+    margin: 116px;
+    max-width: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.move-card__body-text i {
+    color: var(--primary);
+}

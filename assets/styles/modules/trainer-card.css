@@ -1,0 +1,92 @@
+.trainer-card:is(.trainer-card--main) {
+    padding: 56px;
+}
+
+.trainer-card:is(.trainer-card--main) .trainer-card__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768.98px) {
+    .trainer-card:is(.trainer-card--main) .trainer-card__body {
+        justify-content: unset;
+        row-gap: 30px;
+    }
+}
+
+.trainer-card:is(.trainer-card--main) .trainer-card__body-alt {
+    display: grid;
+    row-gap: 16px;
+}
+
+.trainer-card:is(.trainer-card--main) .trainer-card__body-tag,
+.trainer-card:is(.trainer-card--main) .trainer-card__body-title,
+.trainer-card:is(.trainer-card--main) .trainer-card__body-text {
+    text-align: center;
+}
+
+/* стандартные карточки */
+.trainer-card {
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+/* обратиться ко всем классам, у которых нет соседнего класса .trainer-card--main */
+.trainer-card:not(.trainer-card--main) {
+    position: relative;
+    color: var(--primary-foreground);
+    overflow: hidden;
+}
+
+.trainer-card:not(.trainer-card--main):is(:hover, :active) .trainer-card__picture {
+    transform: scale(1);
+}
+.trainer-card:not(.trainer-card--main):is(:hover, :active) .trainer-card__body-info {
+    opacity: 1;
+}
+
+.trainer-card:not(.trainer-card--main) .trainer-card__picture {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transform: scale(1.25);
+    transition: all 300ms;
+}
+
+.trainer-card:not(.trainer-card--main) .trainer-card__body {
+    position: relative;
+    z-index: 10;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: var(--gradient);
+}
+
+.trainer-card:not(.trainer-card--main) .trainer-card__body-info {
+    width: 100%;
+    align-self: end;
+    display: grid;
+    row-gap: 8px;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.trainer-card:not(.trainer-card--main) .trainer-card__body-name {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
+
+.trainer-card:not(.trainer-card--main) .trainer-card__body-position {
+    text-align: center;
+}

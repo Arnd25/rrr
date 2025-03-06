@@ -1,0 +1,108 @@
+.community:is(.community--section) {
+    padding-block: 24px;
+    color: var(--secondary-foreground);
+    background-color: var(--secondary);
+}
+
+.community:is(.community--section) .community__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 1140.98px) {
+    .community:is(.community--section) .community__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.community:is(.community--section) .community__col:is(.community__col--left) {
+    width: 100%;
+    height: 100%;
+}
+
+.community:is(.community--section) .community__picture {
+    width: 100%;
+    height: 790px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .community:is(.community--section) .community__picture {
+        height: 440px;
+    }
+}
+
+.community:is(.community--section) .community__col:is(.community__col--right) {
+    width: 100%;
+    height: 100%;
+}
+
+.community:is(.community--section) .community__wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .community:is(.community--section) .community__wrapper {
+        padding-inline: 0;
+    }
+
+    .community:is(.community--section) .community__body {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .community__visitors {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.community:is(.community--section) .community__header {
+    display: grid;
+    row-gap: 16px;
+}
+
+.community:is(.community--section) .community__header-tag {
+    text-align: center;
+}
+
+.community:is(.community--section) .community__header-title {
+    text-align: center;
+    color: currentColor;
+}
+
+.community:is(.community--section) .community__header-text {
+    text-align: center;
+}
+
+.community:is(.community--section) .community__body {
+    display: grid;
+    row-gap: 50px;
+}
+
+.community:is(.community--section) .community__benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.community:is(.community--section) .community__benefits-item {
+    display: inline-flex;
+}
+
+.community:is(.community--section) .community__visitors {
+    max-width: 100%;
+    width: 100%;
+}
+
+.community:is(.community--section) .community__button {
+    justify-self: center;
+}

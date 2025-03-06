@@ -4,19 +4,32 @@
 
 /* modules */
 @import "./modules/button.css";
+@import "./modules/section-decoration.css";
+@import "./modules/spacing.css";
 @import "./modules/header.css";
-@import "./modules/intro.css";
 @import "./modules/logo.css";
 @import "./modules/navigation.css";
+@import "./modules/intro.css";
+@import "./modules/socials.css";
+@import "./modules/benefits.css";
+@import "./modules/benefit-card.css";
+@import "./modules/pricing.css";
+@import "./modules/pricing-card.css";
+@import "./modules/visitors.css";
+@import "./modules/plan.css";
+@import "./modules/plan-card.css";
+@import "./modules/events.css";
+@import "./modules/event-card.css";
+@import "./modules/community.css";
+@import "./modules/trainers.css";
+@import "./modules/trainer-card.css";
+@import "./modules/testimonials.css";
+@import "./modules/testimonials-slider.css";
+@import "./modules/testimonial-slide.css";
+@import "./modules/move.css";
+@import "./modules/move-card.css";
+@import "./modules/future.css";
+@import "./modules/future-card.css";
 @import "./modules/register.css";
-@import "./modules/section-decoration.css";
 
-
-
-
-
-
-
-
-
-
+@import "./modules/footer.css";

@@ -1,0 +1,60 @@
+.pricing-card {
+    width: 100%;
+    height: 100%;
+    color: var(--primary-foreground);
+}
+
+.pricing-card__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.pricing-card__info {
+    display: grid;
+    row-gap: 16px;
+}
+
+.pricing-card__info-text {
+    display: grid;
+    row-gap: 8px;
+}
+
+.pricing-card__info-title {
+    color: currentColor;
+}
+
+.pricing-card__info-description {
+    color: var(--gray);
+}
+
+.pricing-card__info-value {
+    color: currentColor;
+}
+
+.pricing-card__info-value span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--ff-primary);
+    text-transform: capitalize;
+}
+
+.pricing-card__advantages {
+
+}
+
+.pricing-card__advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pricing-card__advantages-item {
+    display: inline-flex;
+}
+
+.pricing-card__action {
+    margin-block-start: auto;
+}

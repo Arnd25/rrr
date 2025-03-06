@@ -1,0 +1,16 @@
+.spacing {
+    display: grid;
+}
+/* отступы по горизонтали */
+.spacing--x {
+    column-gap: 40px;
+}
+/* отсупы по вертикали */
+.spacing--y {
+    row-gap: 80px;
+}
+@media screen and (max-width: 768.98px) {
+    .spacing--y {
+        row-gap: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.events:is(.events--section) {
+    position: relative;
+    overflow: hidden;
+    padding-block: 104px;
+    background-color: var(--background);
+}
+
+.events:is(.events--section) .section-decoration:is(.section-decoration--light) {
+    top: 50px;
+    right: -10%;
+    transform: rotate(40deg);
+}
+
+.events:is(.events--section) .section-decoration:is(.section-decoration--dark) {
+    top: 45px;
+    right: -10%;
+    transform: rotate(18deg);
+}
+
+.events:is(.events--section) .events__header {
+    max-width: 504px;
+    display: grid;
+    row-gap: 16px;
+}
+
+.events:is(.events--section) .events__list {
+    width: 100%;
+}
