@@ -1,10 +1,9 @@
 .navigation {
     display: flex;
-
     border-radius: var(--rounded-base);
     color: #1B1D21;
-    padding-inline: 16px;
-
+    align-items: center;
+    gap: 30px;
 }
 
 .navigation__menu {
@@ -22,6 +21,4 @@
     text-decoration: none;
     font-weight: 600;
 }
-.header__navbar {
 
-}

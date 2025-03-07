@@ -9,7 +9,6 @@
     font-weight: 700;
     line-height: 92px;
     color: var(--secondary);
-    font-family: var(--ff-secondary);
 }
 
 .title-xl {
