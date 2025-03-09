@@ -1,0 +1,49 @@
+.benefits {
+    padding-inline: 150px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.benefits-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.benefits__text {
+    margin-top: 30px;
+    max-width: 390px;
+}
+.benefits__text-title {
+    margin-bottom: 10px;
+}
+.benefits__text-desc{
+    margin-bottom: 31px;
+}
+.advantages__menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.benefits__button {
+    color: var(--primary);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.ri-flashlight-fill {
+    color: #00CBF8;
+    font-size: 36px;
+}
+.advantages__menu-grid-item {
+    padding-top: 42px;
+    padding-bottom: 28px;
+    padding-inline: 20px;
+}
+.advantages-item-title {
+    padding-top: 15px;
+    padding-bottom: 9px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--secondary-foreground);
+
+}

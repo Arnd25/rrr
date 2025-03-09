@@ -1,7 +1,5 @@
-.container {
-    max-width: var(--container-width);
-    padding-inline: var(--container-offset);
-    margin-inline: auto;
+.section{
+    padding: 100px 150px;
 }
 
 .title-2xl {
@@ -12,33 +10,32 @@
 }
 
 .title-xl {
+    font-weight: 600;
     font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: var(--secondary);
-    font-family: var(--ff-secondary);
+    line-height: 68px;
+    color: var(--primary-foreground);
 }
 
 .title-lg {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
-    color: var(--secondary);
-    font-family: var(--ff-secondary);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
 }
 
 .title-md {
+    font-weight: 600;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: var(--secondary);
-    font-family: var(--ff-secondary);
+    line-height: 100%;
+    padding-bottom:24px ;
 }
 
 .tag {
     font-weight: 700;
     color: var(--primary);
+}
+body {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
 }
