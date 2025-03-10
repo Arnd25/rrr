@@ -12,10 +12,17 @@
     line-height: 32px;
 }
 .advantages__grid {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap:64px;
 }
+@media screen and (max-width: 768.98px) {
+    .advantages__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 .advantages__grid-item-title h2 {
     color: #FFA262;
     font-weight: 400;

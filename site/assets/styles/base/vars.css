@@ -37,6 +37,7 @@
     /* container */
     --content: 1440px;
     --container-offset: 20px;
-    --container-width: calc(var(--content) + (var(--container-offset) * 2));
 
+
+    --swiper-navigation-size: 12px;
 }

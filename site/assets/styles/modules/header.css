@@ -59,13 +59,34 @@
     font-size: 20px;
 }
 .header__modal-btn {
-    font-family: var(--ff-primary);
     font-size: 14px;
     width: 181px;
     color: var(--background);
     background-color: black;
     padding: 13px;
     border-radius: var(--rounded-base);
+}
+.header__menu-burger {
+    display: none;
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: var(--rounded-base);
+    border: none;
+    color: var(--background);
+}
+
+@media screen and (max-width: 768.98px) {
+    .header__modal-btn {
+        width: 100%;
+        display: block;
+        background-color: var(--primary);
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 768.98px) {
+    .header__menu-burger {
+        display: block;
+    }
 }
 
 
