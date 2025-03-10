@@ -1,12 +1,21 @@
-.benefits {
-    padding-inline: 150px;
-    padding-top: 100px;
-    padding-bottom: 80px;
-}
+
 .benefits-grid {
     display: flex;
     flex-direction: row;
     gap: 80px;
+}
+@media screen and (max-width: 1140.98px) {
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768.98px) {
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .benefits__text {
@@ -23,6 +32,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 1140.98px) {
+    .advantages__menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .benefits__button {
     color: var(--primary);
     display: flex;

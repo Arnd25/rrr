@@ -1,5 +1,10 @@
-.section{
+.container {
     padding: 100px 150px;
+}
+@media screen and (max-width: 768.98px) {
+    .container {
+        padding-inline: 50px ;
+    }
 }
 
 .title-2xl {
@@ -9,7 +14,7 @@
     color: var(--secondary);
 }
 
-.title-xl {
+.title-xl h2{
     font-weight: 600;
     font-size: 48px;
     line-height: 68px;
@@ -37,5 +42,5 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }

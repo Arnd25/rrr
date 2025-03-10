@@ -1,36 +1,47 @@
 .footer {
     background-color: var(--primary-foreground);
-    padding-inline: 150px;
-    padding-block: 80px;
     font-weight: 400;
     font-size: 14px;
+    color: white;
 }
 .footer__container {
     display: flex;
-    flex-direction: row;
-    gap: 150px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1140.98px) {
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        column-gap: 40px;
+    }
+}
+@media screen and (max-width: 768.98px) {
+    .footer__container {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        column-gap: 40px;
+    }
 }
 
 .footer__about {
-    max-width: 255px;
-
+    width: 255px;
 }
+.footer__about-text {
+    width: 100%;
+    color: #8D8E90;
+}
+
 .footer__logo {
     display: flex;
     color: var(--background);
     max-width: 130px;
     gap: 8px;
 }
-.footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: var(--background);
-}
 
 .footer-list {
     display: flex;
     flex-direction: column;
-
     gap: 12px;
 }
 
@@ -48,6 +59,24 @@
 .footer__subscribe-form-item {
     color: white;
 }
+
+.footer__about:nth-child(1) {
+    order: 1;
+}
+.footer__Shippers:nth-child(2) {
+    order: 4;
+}
+.footer__resources:nth-child(3) {
+    order: 3;
+}
+.footer__Media:nth-child(4) {
+    order: 2;
+}
+.footer__subscribe:nth-child(5) {
+    order: 5;
+}
+
+
 
 .footer__subscribe-form-button {
     width: 100%;
