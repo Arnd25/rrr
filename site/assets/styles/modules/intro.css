@@ -3,6 +3,7 @@
     max-width: 100%;
 }
 .intro__container {
+    position: relative;
     padding-bottom: unset;
     padding-top: 155px;
 }
@@ -86,19 +87,27 @@
 }
 .intro__content {
     position: relative;
+    padding-bottom: 30px;
 }
 @media screen and (max-width: 1140.98px) {
     .intro_decoration {
         display: none;
+    }
+    .intro__content {
+        padding-bottom: unset;
     }
 }
 @media screen and (max-width: 768.98px) {
     .intro__container{
         width: 100%;
     }
+
 }
 .intro__actions {
-    position:relative;
+    position:absolute;
+}
+@media screen and (max-width: 1140.98px) {
+    .intro__actions {position: relative}
 }
 .shape {
     position: absolute;
@@ -115,4 +124,16 @@
     background-color: #EDEDED;
     left: 472px;
     z-index: 800;
+}
+.triangle {
+    top: 32px;
+    width: 100%;
+    height: 47px;
+    background: white;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+@media screen and (max-width: 1140.98px) {
+    .triangle {
+        display: none;
+    }
 }
