@@ -56,6 +56,11 @@
         bottom: -80px;
     }
 }
+@media screen and (max-width: 768.98px) {
+    .match__grid {
+        left: unset;
+    }
+}
 
 .match__grid-list {
     display: grid;

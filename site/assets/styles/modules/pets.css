@@ -1,5 +1,4 @@
 
-
 .pets__container {
     display: flex;
     flex-direction: column;
@@ -32,10 +31,7 @@
     flex-direction: column;
     row-gap: 10px;
 }
-.pets__grid-item:is(:hover,:active){
-    scale: 1.2;
-    margin: 10px;
-}
+
 .pets-img img{
     max-width: 100%;
     max-height: 100%;
@@ -50,13 +46,20 @@
     color: var(--primary-foreground);
     text-align: left;
 }
+.pets-description-title {
+    max-width: 294px;
+}
 .pet-description-text {
     display: flex;
     padding-top: 32px;
     justify-content: space-between;
+
 }
 .pets-description-link {
     display: flex;
     align-items: center;
     color: var(--primary);
+    font-weight: 600;
+    font-size: 20px;
+
 }

@@ -3,6 +3,7 @@
     padding: 20px 50px;
     width: 100%;
     color: #1B1D21;
+    z-index: 10;
 }
 
 .header__container {
@@ -51,7 +52,7 @@
     border-radius: 50%;
     background: #FFA262;
 }
-.header__logo {
+.logo__link {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -61,7 +62,7 @@
 .header__modal-btn {
     font-size: 14px;
     width: 181px;
-    color: var(--background);
+    color: var(--white-foreground);
     background-color: black;
     padding: 13px;
     border-radius: var(--rounded-base);
@@ -72,7 +73,7 @@
     background-color: var(--primary);
     border-radius: var(--rounded-base);
     border: none;
-    color: var(--background);
+    color: var(--white-foreground);
 }
 
 @media screen and (max-width: 768.98px) {

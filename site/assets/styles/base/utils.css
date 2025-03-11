@@ -7,9 +7,12 @@
     }
 }
 
-@media screen and (max-width: 520.98px) {
-
+@media screen and (max-width: 1140.98px) {
+    .container {
+        padding-inline: 100px;
+    }
 }
+
 
 .title-2xl {
     font-size: 72px;
@@ -18,7 +21,7 @@
     color: var(--secondary);
 }
 
-.title-xl h2{
+.title-xl h2 {
     font-weight: 600;
     font-size: 48px;
     line-height: 68px;
@@ -28,7 +31,8 @@
 .title-lg {
     font-weight: 400;
     font-size: 24px;
-    line-height: 100%;
+    line-height: 32px;
+    color: var(--primary-foreground);
 }
 
 .title-md {
@@ -42,9 +46,4 @@
     font-weight: 700;
     color: var(--primary);
 }
-body {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: 0;
-}
+

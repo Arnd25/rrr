@@ -4,6 +4,7 @@
     --ff-primary: "Inter", serif;
     --ff-secondary: "Manrope", serif;
 
+
     --intro: #FFDCDD;
     --background: #fff;
     --foreground: #575757;
@@ -22,6 +23,8 @@
     /* accent */
     --accent: var(--primary);
     --accent-foreground: var(--primary);
+
+    --white-foreground:#FFFFFF;
 
     --gray: #676C86;
     --gradient: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);

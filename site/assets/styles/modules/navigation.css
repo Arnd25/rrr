@@ -37,7 +37,7 @@
         transform: translateX(-100%);
         transition: all 0.3s ease;
         z-index: 100;
-        color: white;
+        color: var(--white-foreground);
         align-items: unset;
     }
 

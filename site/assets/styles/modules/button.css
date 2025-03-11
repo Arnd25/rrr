@@ -5,5 +5,5 @@
     border-radius: var(--rounded-base);
     border: none;
     text-align: center;
+    cursor: pointer;
 }
-
