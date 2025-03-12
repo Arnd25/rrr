@@ -49,15 +49,15 @@
     max-width: 281px;
     width: 100%;
 }
-
 @media screen and (max-width: 1140.98px) {
     .match__grid {
-        top: unset;
-        bottom: -80px;
+        left: unset;
+        right: -121px;
     }
 }
 @media screen and (max-width: 768.98px) {
     .match__grid {
+        right: -20px;
         left: unset;
     }
 }
@@ -96,7 +96,6 @@
     font-size: 14px;
     line-height: 100%;
 }
-
 .match__col-comment {
     display: grid;
     row-gap: 20px;
@@ -108,11 +107,9 @@
 .match-description{
     padding-block: 10px 24px;
 }
-
 .match__col-right {
     max-width: 460px;
 }
-
 @media screen and (max-width: 1140.98px) {
     .match__col-right {
         max-width: unset;
@@ -129,7 +126,6 @@
 .match__col-comment-text {
     line-height: 32px;
 }
-
 @media screen and (max-width: 1140.98px) {
     .match__col-left {
         order: 2;
