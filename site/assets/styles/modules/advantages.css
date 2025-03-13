@@ -7,7 +7,6 @@
 .advantages-text {
     margin-block: 16px 56px;
     max-width: 877px;
-    font-weight: 400;
     font-size: 18px;
     line-height: 32px;
 }
@@ -18,11 +17,9 @@
 }
 @media screen and (max-width: 768.98px) {
     .advantages__grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2,1fr);
     }
 }
-
-
 .advantages__grid-item-title h2 {
     color: #FFA262;
     font-weight: 400;

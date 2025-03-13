@@ -1,8 +1,6 @@
-
 .pets__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     row-gap: 64px;
@@ -31,11 +29,11 @@
     flex-direction: column;
     row-gap: 10px;
 }
-
 .pets-img img{
-    max-width: 100%;
-    max-height: 100%;
     border-radius: var(--rounded-base);
+}
+.pets-description-title {
+    max-width: 294px;
 }
 .pets-item-description {
     background-color: #F5F3FF;
@@ -45,9 +43,6 @@
     flex-direction: column;
     color: var(--primary-foreground);
     text-align: left;
-}
-.pets-description-title {
-    max-width: 294px;
 }
 .pet-description-text {
     display: flex;
@@ -61,5 +56,4 @@
     color: var(--primary);
     font-weight: 600;
     font-size: 20px;
-
 }

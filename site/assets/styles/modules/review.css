@@ -8,7 +8,6 @@
 }
 .review__wrapper {
     padding-top: 80px;
-    max-width: 1140px;
 }
 .review-wrapper-item {
     display: flex;
@@ -67,6 +66,7 @@
 .swiper-button[aria-disabled="true"] {
     background-color: #F5F3FF;
     color: var(--primary);
+    opacity: unset  ;
 }
 
 @media screen and (max-width: 768.98px) {
