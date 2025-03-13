@@ -34,7 +34,6 @@
 @media screen and (max-width: 1140.98px) {
     .support__col-right {
         align-items: center;
-        justify-content: center;
     }
 }
 .support__col-img {
@@ -106,13 +105,15 @@
 }
 
 .support__col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
     max-width: 457px;
 }
 @media screen and (max-width: 1140.98px) {
     .support__col-left{
         max-width: 100%;
     }
-
 }
 
 .support__col-comment {
