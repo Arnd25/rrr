@@ -1,19 +1,17 @@
 .container {
     padding: 100px 150px;
 }
-@media screen and (max-width: 768.98px) {
-    .container {
-        padding-inline: 50px ;
-    }
-}
 
 @media screen and (max-width: 1140.98px) {
     .container {
         padding-inline: 100px;
     }
 }
-
-
+@media screen and (max-width: 768.98px) {
+    .container {
+        padding-inline: 50px;
+    }
+}
 .title-2xl {
     font-size: 72px;
     font-weight: 700;
