@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dbeefa;
+    font-family: 'Poopins', sans-serif;
+}
+.accordion--section {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+.accordion {
+    display: grid;
+    width: 100%;
+    background: #FFF;
+    margin: 0 1rem;
+    padding: 40px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.accordion .accordion-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #e8ffdc;
+    border-color: #bbffaa;
+    overflow: hidden;
+    width: 100%;
+    border-left: 6px solid ;
+    max-width: 520px;
+}
+
+.accordion-content.is-open {
+    padding-bottom: 10px;
+}
+
+.accordion-content header {
+    display: flex;
+    gap: 12px;
+    min-height: 50px;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.2s linear;
+}
+.accordion-content.is-open header {
+    min-height: 35px;
+}
+.accordion-content-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+.accordion-content-description {
+    max-width: 385px;
+    display: none;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 28px;
+}
+.accordion-content:is(.is-open) .accordion-content-description {
+    display: block;
+}
+.accordion-content:is(.is-open) i {
+    rotate: 45deg;
+}
+.accordion-title {
+    color: #242D4E;
+    font-weight: 600;
+    font-size: 78px;
+    max-width: 550px;
+}
+.accordion-title span {
+    color: #5D84FF;
+
+}
